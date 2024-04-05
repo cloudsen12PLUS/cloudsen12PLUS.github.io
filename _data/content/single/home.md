@@ -19,9 +19,9 @@ en:
         link: "#projects"
         type: Secondary
     images:
-      - /cloudsen12/assets/heart.webp
-      - /cloudsen12/assets/brain.webp
-      - /cloudsen12/assets/eye.webp
+      - /assets/heart.webp
+      - /assets/brain.webp
+      - /assets/eye.webp
   about:
     active: true
     title: About me
@@ -109,9 +109,9 @@ pt:
         link: "#projects"
         type: Secondary
     images:
-      - /cloudsen12/assets/heart.webp
-      - /cloudsen12/assets/brain.webp
-      - /cloudsen12/assets/eye.webp
+      - /assets/heart.webp
+      - /assets/brain.webp
+      - /assets/eye.webp
   about:
     active: true
     image: https://res.cloudinary.com/ppkehl/image/upload/v1656728600/home/about/pedro-kehl-400_xd6bmu.webp

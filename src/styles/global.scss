@@ -59,7 +59,7 @@
 		@apply mb-6;
 	}
 	a {
-		@apply text-teal-900 border-b-2 border-b-teal-900 after:content-[''] after:w-2.5 after:h-2.5 after:ml-1 after:inline-block after:bg-contain after:bg-no-repeat after:bg-[url('/cloudsen12/assets/icon-link.svg')];
+		@apply text-teal-900 border-b-2 border-b-teal-900 after:content-[''] after:w-2.5 after:h-2.5 after:ml-1 after:inline-block after:bg-contain after:bg-no-repeat after:bg-[url('/assets/icon-link.svg')];
 	}
 	p>code {
 		@apply bg-slate-700 text-white p-[2px] rounded-sm whitespace-normal text-sm;
@@ -90,7 +90,7 @@
 .dark {
 	[data-format-text] {
 		a {
-			@apply text-teal-300 border-b-2 border-b-teal-300 after:bg-[url('/cloudsen12/assets/icon-link-dark.svg')]; 
+			@apply text-teal-300 border-b-2 border-b-teal-300 after:bg-[url('/assets/icon-link-dark.svg')]; 
 		}
 		p>code{
 			@apply bg-slate-600;
