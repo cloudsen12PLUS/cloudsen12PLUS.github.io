@@ -7,6 +7,5 @@ import image from "@astrojs/image";
 
 export default defineConfig({
   integrations: [svelte(), tailwind(), sitemap(), partytown(), image()],
-  site: 'https://csaybar.github.io',
-  base: '/cloudsen12'
+  site: 'https://cloudsen12PLUS.github.io'
 });
