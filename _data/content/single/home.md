@@ -2,15 +2,15 @@
 en:
   hero:
     active: true
-    tagline: "We believe EO datasets should be:"
+    tagline: "Welcome to our"
     description: |-
-     CloudSEN12 provides the largest collection of expert-labeled pixels for cloud and cloud shadow detection in Sentinel-2.
+     CloudSEN12 offers the most comprehensive collection for cloud and cloud shadow detection in Sentinel-2.
     mainTagline: |-
-      Unbias,
+      Cloud,
 
-      High-quality &
+      Expert-labeled
 
-      Practical
+      Pixel hub
     buttons:
       - label: Contact Me
         link: "#contact"
