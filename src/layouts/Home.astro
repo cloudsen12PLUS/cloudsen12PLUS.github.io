@@ -6,6 +6,7 @@ import Form from '@components/Form.svelte'
 import Blobs from '@components/Blobs.svelte'
 import ProjectPreview from '@components/ProjectPreview.astro'
 import BlogPreview from '@components/BlogPreview.astro'
+import Markdown from '@astrojs/markdown-component';
 import { getTranslations, getLocaleFromURL } from '@lib/translations';
 
 // Get post from index.astro or [locale.astro]
@@ -55,10 +56,8 @@ const heroImage = post.hero.images[0]
         {post.hero.description}
       </div>
       <div class="lg:flex lg:space-x-6 space-y-6 lg:space-y-0">
-        <!-- {post.hero.buttons.map((button) => <Button type="a" style={button.type}
-          link={button.link}>{button.label}</Button>)} -->
-          <img class="w-12 h-12 object-contain" src="/assets/logo-github.svg" alt="github">
-          <img class="w-12 h-12 object-contain" src="/assets/logo-huggingface.svg" alt="huggingface">
+        {post.hero.buttons.map((button) => <Button type="a" style={button.type}
+          link={button.link}>{button.label}</Button>)}
       </div>
     </div>
     <div class="w-full h-full right-0 md:w-8/12 lg:w-6/12 absolute">
@@ -91,7 +90,7 @@ const heroImage = post.hero.images[0]
           </div>
           <div class="hidden lg:block lg:w-1/12 relative"></div>
           <div class="w-full lg:w-6/12 space-y-4 relative dark:text-white z-10" data-format-text>
-            <!-- <Markdown content={post.about.text} /> -->
+            <Markdown content={post.about.text} />
           </div>
         </div>
       </div>
