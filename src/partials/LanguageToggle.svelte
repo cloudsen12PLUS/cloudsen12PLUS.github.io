@@ -4,14 +4,16 @@
 
 {#if Object.keys(translationsURL).length}
   <div class="relative z-10 dark:text-white mr-4 flex">
-    <ul class="flex space-x-2 list-none">
+    <ul class="flex space-x-2 list-none items-center">
       {#each Object.keys(translationsURL) as key}
-        <li class="uppercase font-semibold text-sm mt-0 flex items-center">
-          <a href={translationsURL[key]}>
-            <img class="w-9 object-contain" id="img_language" src="" alt="" />
+        <li class="uppercase font-semibold -m-1 text-sm flex items-center">
+          <a href="{translationsURL[key]}" class="dark:text-white" id="img_language">
           </a>
         </li>
       {/each}
     </ul>
   </div>
 {/if}
+<style>
+  
+</style>
