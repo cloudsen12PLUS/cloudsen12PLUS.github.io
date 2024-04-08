@@ -123,33 +123,28 @@ pt:
   about:
     active: true
     image: https://res.cloudinary.com/ppkehl/image/upload/v1656728600/home/about/pedro-kehl-400_xd6bmu.webp
-    title: Sobre mim
-    description: Eu gosto de resolver problemas e pensar sobre o futuro
+    title: Sobre mi
+    description:
     text: >-
-      Sou formado em design digital, trabalhando há mais de 20 anos como
-      freelancer em design, desenvolvimento e identidade de marca.
+      Nuestro proyecto tiene sus raices Perú, donde enfrentábamos día a día el desafío de trabajar con imágenes contaminadas con nubes. En las imagenes de los Andes, los algoritmos de detección de nubes no funcionan correctamente, lo que suponía todo un reto para nosotros. En nuestro afán por encontrar una solución, reconocimos que el primer paso era contar con un dataset adecuado. A pesar de que había varios disponibles, ninguno abordaba de manera efectiva las particularidades de nuestra región andina.
+
+      De esa necesidad nació CloudSEN12, un proyecto que nos llenó de emoción y compromiso. Nos propusimos la ambiciosa tarea de crear un conjunto de datos mundial con etiquetas manuales. Nos sumergimos en la labor de seleccionar cuidadosamente imágenes satelitales en áreas que otros datasets pasaban por alto. 
+
+      Tras el lanzamiento de este conjunto de datos y recibir valiosos comentarios, nos sentimos inspirados para seguir mejorando. Así fue como nació CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad.
 
 
-      Priorizo abordagens sistêmicas na resolução de problemas e estou sempre estudando o que há de novo na área de tecnologia.
+      **Nuestra motivación:**
 
+      We believe EO datasets should be: Unbias, High-quality & Practical
+      Nos apasiona profundamente el trabajo que realizamos y estamos comprometidos con la excelencia en cada paso del camino. Nos llena de orgullo decir que nuestro conjunto de datos es libre y siempre lo será. 
 
-      **Principais conhecimentos:**
+      **Nuestra misión: **
 
+      Contribuir al avance de las metodologías de detección de nubes y convertir a CloudSEN12+ en un recurso esencial para la comunidad de investigación en este campo.
 
-      Design de interfaces utilizando as melhores práticas de UI/UX e aplicando o conceito de design tokens para desenvolvimento escalável em diferentes plataformas/produtos.
+      **Agradecimientos**
 
-
-      Criação de sites personalizados usando [WordPress](https://br.wordpress.org/) como backend para resultados rápidos e eficientes.
-
-
-      **Estudando atualmente:**
-
-
-      1. Design tokens para criar uma comunicação visual coerente entre times e produtos ([Style Dictionary](https://amzn.github.io/style-dictionary), [Figma Tokens](https://www.figmatokens.com/))
-
-      2. Desacoplamento front-end e back-end, usando CMSs headless ([Strapi](https://strapi.io/), [Payload CMS](https://payloadcms.com/), [Netlify CMS](https://www.netlifycms.org/)  e outros CMSs headless)
-
-      3. Frontends extremamente rápidos ([Svelte](https://svelte.dev/), [Astro](https://astro.build/))
+      Queremos agradecer el apoyo invaluable de la Universidad Nacional Mayor de San Marcos y la Universidad Politécnica de Valencia, cuya orientación y conocimiento técnico nos ayudaron a convertir nuestro proyecto en lo que es hoy.
   projects:
     postsNum: 3
     active: true
