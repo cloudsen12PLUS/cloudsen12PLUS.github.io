@@ -6,18 +6,23 @@ en:
     description: |-
      CloudSEN12 offers the most comprehensive collection for cloud and cloud shadow detection in Sentinel-2.
     mainTagline: |-
-      Cloud,
+      Cloud
 
       Expert-labeled
 
       Pixel hub
     buttons:
-      - label: Contact Me
+      - label: Paper 2022
         link: "#contact"
         type: Primary
-      - label: What I do
+      - label: Paper 2023
         link: "#projects"
         type: Secondary
+      - label: Paper 2024
+        link: "#projects"
+        type: Tertiary
+
+
     images:
       - /assets/heart.webp
       - /assets/brain.webp
@@ -102,10 +107,13 @@ pt:
     description: |-
       CloudSEN12 proporcion la mayor colección de píxeles etiquetados por expertos para la detección de nubes y sombras de nubes en Sentinel-2
     buttons:
-      - label: Fale comigo
+      - label: Paper 2022
         link: "#contact"
         type: Primary
-      - label: Conheça meu trabalho
+      - label: Paper 2023
+        link: "#projects"
+        type: Secondary
+      - label: Paper 2024
         link: "#projects"
         type: Secondary
     images:
