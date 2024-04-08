@@ -128,7 +128,9 @@ pt:
     text: >-
       Nuestro proyecto tiene sus raices Perú, donde enfrentábamos día a día el desafío de trabajar con imágenes contaminadas con nubes. En las imagenes de los Andes, los algoritmos de detección de nubes no funcionan correctamente, lo que suponía todo un reto para nosotros. En nuestro afán por encontrar una solución, reconocimos que el primer paso era contar con un dataset adecuado. A pesar de que había varios disponibles, ninguno abordaba de manera efectiva las particularidades de nuestra región andina.
 
+
       De esa necesidad nació CloudSEN12, un proyecto que nos llenó de emoción y compromiso. Nos propusimos la ambiciosa tarea de crear un conjunto de datos mundial con etiquetas manuales. Nos sumergimos en la labor de seleccionar cuidadosamente imágenes satelitales en áreas que otros datasets pasaban por alto. 
+
 
       Tras el lanzamiento de este conjunto de datos y recibir valiosos comentarios, nos sentimos inspirados para seguir mejorando. Así fue como nació CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad.
 
@@ -138,9 +140,11 @@ pt:
       We believe EO datasets should be: Unbias, High-quality & Practical
       Nos apasiona profundamente el trabajo que realizamos y estamos comprometidos con la excelencia en cada paso del camino. Nos llena de orgullo decir que nuestro conjunto de datos es libre y siempre lo será. 
 
+
       **Nuestra misión: **
 
       Contribuir al avance de las metodologías de detección de nubes y convertir a CloudSEN12+ en un recurso esencial para la comunidad de investigación en este campo.
+
 
       **Agradecimientos**
 
