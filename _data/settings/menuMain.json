@@ -2,22 +2,22 @@
   "en": {
     "mainMenu": [
       {
-        "title": "About",
-        "description": "Life & Experience",
+        "title": "About us",
+        "description": "Experience",
         "url": "#about"
       },
       {
-        "title": "Projects",
-        "description": "What I do",
+        "title": "Examples",
+        "description": "What it does",
         "url": "#projects"
       },
       {
-        "title": "Ideas",
-        "description": "Texts & Thoughts",
+        "title": "Blog",
+        "description": "Thoughts",
         "url": "#ideas"
       },
       {
-        "title": "Contact",
+        "title": "Contact us",
         "description": "Let's Talk",
         "url": "#contact"
       }
@@ -26,18 +26,18 @@
   "pt": {
     "mainMenu": [
       {
-        "title": "Sobre",
-        "description": "Vida & Experiência",
+        "title": "Nosotros",
+        "description": "Experiencia",
         "url": "pt/#about"
       },
       {
-        "title": "Projetos",
-        "description": "O que eu faço",
+        "title": "Ejemplos",
+        "description": "Que hacer",
         "url": "pt/#projects"
       },
       {
-        "title": "Ideias",
-        "description": "Textos & Pensamentos",
+        "title": "Blog",
+        "description": "Ideas",
         "url": "pt/#ideas"
       },
       {
