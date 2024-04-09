@@ -77,7 +77,7 @@ en:
       - label: github.com/ppkehl
         url: https://github.com/ppkehl
         icon: https://res.cloudinary.com/ppkehl/image/upload/v1657591338/icons/logo-github_o8nj8f_ltj0dc.svg
-pt:
+es:
   hero:
     active: true
     tagline: "Descubre nuestro hub de"
