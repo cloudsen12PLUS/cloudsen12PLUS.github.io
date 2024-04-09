@@ -120,23 +120,23 @@ pt:
       **Nuestra misión:**
 
       Contribuir al avance de las metodologías de detección de nubes y convertir a CloudSEN12+ en un recurso esencial para la comunidad de investigación en este campo.
-      
+
   projects:
     postsNum: 3
     active: true
-    title: Projetos
+    title: Ejemplos
     description: Alguns exemplos de projetos executados em diferentes plataformas
       com diferentes equipes
     seeMore: Veja mais projetos
   blog:
     postsNum: 4
     active: true
-    title: Ideias
+    title: Blog
     description: Pensamentos sobre design, internet e outros interesses
     seeMore: Veja mais posts
   contact:
     active: true
-    title: Contato
+    title: Contactanos
     description: Vamos conversar
     contactMethods:
       - label: info@pedrokehl.net
