@@ -29,6 +29,7 @@ en:
       - /assets/eye.webp
   about:
     active: true
+    image: https://res.cloudinary.com/ppkehl/image/upload/v1656728600/home/about/pedro-kehl-400_xd6bmu.webp
     title: About us
     description: 
     text: >-
