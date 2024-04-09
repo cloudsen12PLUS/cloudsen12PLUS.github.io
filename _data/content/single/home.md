@@ -32,7 +32,7 @@ en:
     title: About us
     description: 
     text: >-
-     The CloudSEN12 project originated in Peru, backed by the National University of San Marcos in Peru and the University of Valencia in Spain. It arose from the need to address the challenge of working with images contaminated by clouds in the Peruvian Andes, where cloud detection algorithms perform poorly. Without suitable datasets for this region, we decided to create CloudSEN12, a global dataset with manual labels, carefully selecting satellite images in previously overlooked areas. After the dataset's release and receiving valuable feedback, the team was motivated to improve further, leading to CloudSEN12+, where with the acquired knowledge, we refined the dataset to ensure maximum trustworthiness.
+     The CloudSEN12 project originated in Peru, supported by the National University of San Marcos in Peru and the University of Valencia in Spain. It stemmed from the necessity to tackle the challenge of working with images contaminated by clouds in the Peruvian Andes, where cloud detection algorithms perform poorly. Due to the absence of suitable datasets for this region, we decided to create CloudSEN12, a global dataset with manual labels, carefully selecting satellite images from previously overlooked areas. After the dataset's release and receiving valuable feedback, the team was motivated to improve further, leading to CloudSEN12+, where with the acquired knowledge, we refined the dataset to ensure maximum trustworthiness.
 
       **Our motivation:**
       
@@ -45,20 +45,20 @@ en:
 
   projects:
     active: true
-    title: Projects
+    title: Examples
     description: Some examples of projects executed on different platforms with
       different teams
     postsNum: 3
     seeMore: See more projects
   blog:
     active: true
-    title: Ideas
+    title: Blog
     description: Thoughts on design, web, and other interests
     postsNum: 4
     seeMore: See more posts
   contact:
     active: true
-    title: Contact
+    title: Contact us
     description: Drop me a line
     contactMethods:
       - label: info@pedrokehl.net
@@ -79,11 +79,11 @@ en:
 pt:
   hero:
     active: true
-    tagline: "Descubre nuestro"
+    tagline: "Descubre nuestro hub de"
     mainTagline: |-
-      Hub de pixeles
+      Píxeles
 
-      De nubes etiquetados
+      Etiquetados
 
       Por expertos
     description: |-
@@ -105,15 +105,20 @@ pt:
   about:
     active: true
     image: https://res.cloudinary.com/ppkehl/image/upload/v1656728600/home/about/pedro-kehl-400_xd6bmu.webp
-    title: Sobre mi
+    title: Sobre nosotros
     description:
     text: >-
-      El proyecto CloudSEN12 surgió en Perú, respaldado por la Universidad Nacional Mayor de San Marcos en Perú y la Universidad de Valencia. Surgió de la necesidad de abordar el desafío de trabajar con imágenes contaminadas por nubes en los Andes peruanos, donde los algoritmos de detección de nubes no funcionaban correctamente. Ante la falta de datasets adecuados para esta región, se decidió crear CloudSEN12, un conjunto de datos mundial con etiquetas manuales, seleccionando cuidadosamente imágenes satelitales en áreas previamente pasadas por alto. Tras el lanzamiento del dataset y recibir comentarios valiosos, el equipo se inspiró para mejorar aún más, dando lugar a CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad.
+      El proyecto CloudSEN12 se originó en Perú, respaldado por la Universidad Nacional Mayor de San Marcos y la Universidad de Valencia. Surgió de la necesidad de abordar el desafío de trabajar con imágenes contaminadas por nubes en los Andes peruanos, donde los algoritmos de detección de nubes no funcionaban correctamente. Ante la falta de datasets adecuados para esta región, se decidió crear CloudSEN12, un conjunto de datos mundial con etiquetas manuales, seleccionando cuidadosamente imágenes satelitales en áreas previamente pasadas por alto.
+
+
+      Tras el lanzamiento de este conjunto de datos y recibir valiosos comentarios, nos sentimos inspirados para seguir mejorando. Así fue como nació CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad. 
 
 
       **Nuestra motivación:**
 
-      We believe EO datasets should be: Unbias, High-quality & Practical
+      We believe EO datasets should be: Unbias, High-quality & Practical.
+
+
       Nos apasiona profundamente el trabajo que realizamos y estamos comprometidos con la excelencia en cada paso del camino. Nos llena de orgullo decir que nuestro conjunto de datos es libre y siempre lo será. 
 
 
@@ -136,7 +141,7 @@ pt:
     seeMore: Veja mais posts
   contact:
     active: true
-    title: Contactanos
+    title: Contáctanos
     description: Vamos conversar
     contactMethods:
       - label: info@pedrokehl.net
