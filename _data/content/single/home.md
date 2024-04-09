@@ -47,14 +47,13 @@ en:
   projects:
     active: true
     title: Examples
-    description: Some examples of projects executed on different platforms with
-      different teams
+    description: Some practical examples of the use of the CloudSEN12+
     postsNum: 3
     seeMore: See more examples
   blog:
     active: true
     title: Blog
-    description: Thoughts on design, web, and other interests
+    description: Ideas and posts
     postsNum: 4
     seeMore: See more posts
   contact:
@@ -128,19 +127,18 @@ es:
     postsNum: 3
     active: true
     title: Ejemplos
-    description: Alguns exemplos de projetos executados em diferentes plataformas
-      com diferentes equipes
-    seeMore: Veja mais projetos
+    description: Algunos ejemplos prácticos del uso del dataset CloudSEN12+.
+    seeMore: Ver más ejemplos
   blog:
     postsNum: 4
     active: true
     title: Blog
-    description: Pensamentos sobre design, internet e outros interesses
-    seeMore: Veja mais posts
+    description: Ideas y posts 
+    seeMore: Ver más posts
   contact:
     active: true
     title: Contáctanos
-    description: Vamos conversar
+    description: Escríbenos 
     contactMethods:
       - label: info@pedrokehl.net
         url: mailto:info@pedrokehl.net
