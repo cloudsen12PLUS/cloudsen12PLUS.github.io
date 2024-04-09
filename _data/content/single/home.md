@@ -37,8 +37,8 @@ en:
 
       **Our motivation:**
       
-      "We believe EO datasets should be Unbiased, High-quality & Practical."
-      We are deeply passionate about our work and are committed to excellence every step of the way. We take pride in saying that our dataset is free and will always be.
+      "We believe EO datasets should be Unbiased, High-quality & Practical."<br>
+      We are deeply passionate about our work and are committed to excellence every step of the way. We are committed to providing ongoing access to our dataset, ensuring its availability for all users indefinitely.
 
       **Our mission:**
 
@@ -50,7 +50,7 @@ en:
     description: Some examples of projects executed on different platforms with
       different teams
     postsNum: 3
-    seeMore: See more projects
+    seeMore: See more examples
   blog:
     active: true
     title: Blog
@@ -109,21 +109,18 @@ pt:
     title: Sobre nosotros
     description:
     text: >-
-      El proyecto CloudSEN12 se originó en Perú, respaldado por la Universidad Nacional Mayor de San Marcos y la Universidad de Valencia. Surgió de la necesidad de abordar el desafío de trabajar con imágenes contaminadas por nubes en los Andes peruanos, donde los algoritmos de detección de nubes no funcionaban correctamente. Ante la falta de datasets adecuados para esta región, se decidió crear CloudSEN12, un conjunto de datos mundial con etiquetas manuales, seleccionando cuidadosamente imágenes satelitales en áreas previamente pasadas por alto.
-
-
-      Tras el lanzamiento de este conjunto de datos y recibir valiosos comentarios, nos sentimos inspirados para seguir mejorando. Así fue como nació CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad. 
+      El proyecto CloudSEN12 se originó en Perú, respaldado por la Universidad Nacional Mayor de San Marcos y la Universidad de Valencia. Surgió de la necesidad de abordar el desafío de trabajar con imágenes contaminadas por nubes en los Andes peruanos, donde los algoritmos de detección de nubes no funcionaban correctamente. Ante la falta de datasets adecuados para esta región, se decidió crear CloudSEN12, un conjunto de datos mundial con etiquetas manuales, seleccionando cuidadosamente imágenes satelitales en áreas previamente pasadas por alto. Tras el lanzamiento de este conjunto de datos y recibir valiosos comentarios, nos sentimos inspirados para seguir mejorando. Así fue como nació CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad. 
 
 
       **Nuestra motivación:**
 
-      We believe EO datasets should be: Unbias, High-quality & Practical.
 
-
+      "We believe EO datasets should be: Unbias, High-quality & Practical". <br>
       Nos apasiona profundamente el trabajo que realizamos y estamos comprometidos con la excelencia en cada paso del camino. Nos llena de orgullo decir que nuestro conjunto de datos es libre y siempre lo será. 
 
 
       **Nuestra misión:**
+
 
       Contribuir al avance de las metodologías de detección de nubes y convertir a CloudSEN12+ en un recurso esencial para la comunidad de investigación en este campo.
 
