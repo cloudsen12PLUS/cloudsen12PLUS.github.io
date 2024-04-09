@@ -29,38 +29,20 @@ en:
       - /assets/eye.webp
   about:
     active: true
-    title: About me
-    description: I like to solve problems and think about the future
+    title: About us
+    description: 
     text: >-
-      I graduated in digital design, working for over 20 years as a freelancer
-      in design, development, and brand identity.\
+     The CloudSEN12 project originated in Peru, backed by the National University of San Marcos in Peru and the University of Valencia in Spain. It arose from the need to address the challenge of working with images contaminated by clouds in the Peruvian Andes, where cloud detection algorithms perform poorly. Without suitable datasets for this region, we decided to create CloudSEN12, a global dataset with manual labels, carefully selecting satellite images in previously overlooked areas. After the dataset's release and receiving valuable feedback, the team was motivated to improve further, leading to CloudSEN12+, where with the acquired knowledge, we refined the dataset to ensure maximum trustworthiness.
 
-      \
+      **Our motivation:**
+      
+      "We believe EO datasets should be Unbiased, High-quality & Practical."
+      We are deeply passionate about our work and are committed to excellence every step of the way. We take pride in saying that our dataset is free and will always be.
 
-      I like to have a systemic approach to problem solving, and I’m always studying what is new in the field of technology.\
+      **Our mission:**
 
-      \
+      To contribute to advancing cloud detection methodologies and making CloudSEN12+ an essential resource for the research community in this field.
 
-      **Main expertise:**\
-
-      \
-
-      Design of interfaces using the best practices of UI/UX and applying the concept of design tokens for scalable development in different platforms/products.\
-
-      \
-
-      Creation of custom websites using WordPress as a backend for fast and efficient results.
-
-
-      **Currently studying:**
-
-
-      1. Design tokens to create coherent visual communication between teams and products ([Style Dictionary](https://amzn.github.io/style-dictionary), [Figma Tokens](https://www.figmatokens.com/))
-
-      2. Decoupling front and backend, using headless CMS’s ([Strapi](https://strapi.io/), [Payload CMS](https://payloadcms.com/), [Netlify CMS](https://www.netlifycms.org/)  and other headless CMS’s)
-
-      3. Blazing fast frontends ([Svelte](https://svelte.dev/), [Astro](https://astro.build/))
-    image: https://res.cloudinary.com/ppkehl/image/upload/v1656728600/home/about/pedro-kehl-400_xd6bmu.webp
   projects:
     active: true
     title: Projects
@@ -97,15 +79,15 @@ en:
 pt:
   hero:
     active: true
-    tagline: "Nosotros creemos que los datasets para EO deben ser:"
+    tagline: "Descubre nuestro"
     mainTagline: |-
-      Insesgados,
+      Hub de pixeles
 
-      Alta calidad &
+      De nubes etiquetados
 
-      Funcional
+      Por expertos
     description: |-
-      CloudSEN12 proporcion la mayor colección de píxeles etiquetados por expertos para la detección de nubes y sombras de nubes en Sentinel-2
+      CloudSEN12 ofrece la colección más completa para la detección de nubes y sombras de nubes en Sentinel-2.
     buttons:
       - label: Paper 2022
         link: "#contact"
@@ -126,13 +108,7 @@ pt:
     title: Sobre mi
     description:
     text: >-
-      Nuestro proyecto tiene sus raices Perú, donde enfrentábamos día a día el desafío de trabajar con imágenes contaminadas con nubes. En las imagenes de los Andes, los algoritmos de detección de nubes no funcionan correctamente, lo que suponía todo un reto para nosotros. En nuestro afán por encontrar una solución, reconocimos que el primer paso era contar con un dataset adecuado. A pesar de que había varios disponibles, ninguno abordaba de manera efectiva las particularidades de nuestra región andina.
-
-
-      De esa necesidad nació CloudSEN12, un proyecto que nos llenó de emoción y compromiso. Nos propusimos la ambiciosa tarea de crear un conjunto de datos mundial con etiquetas manuales. Nos sumergimos en la labor de seleccionar cuidadosamente imágenes satelitales en áreas que otros datasets pasaban por alto. 
-
-
-      Tras el lanzamiento de este conjunto de datos y recibir valiosos comentarios, nos sentimos inspirados para seguir mejorando. Así fue como nació CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad.
+      El proyecto CloudSEN12 surgió en Perú, respaldado por la Universidad Nacional Mayor de San Marcos en Perú y la Universidad de Valencia. Surgió de la necesidad de abordar el desafío de trabajar con imágenes contaminadas por nubes en los Andes peruanos, donde los algoritmos de detección de nubes no funcionaban correctamente. Ante la falta de datasets adecuados para esta región, se decidió crear CloudSEN12, un conjunto de datos mundial con etiquetas manuales, seleccionando cuidadosamente imágenes satelitales en áreas previamente pasadas por alto. Tras el lanzamiento del dataset y recibir comentarios valiosos, el equipo se inspiró para mejorar aún más, dando lugar a CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad.
 
 
       **Nuestra motivación:**
@@ -141,14 +117,10 @@ pt:
       Nos apasiona profundamente el trabajo que realizamos y estamos comprometidos con la excelencia en cada paso del camino. Nos llena de orgullo decir que nuestro conjunto de datos es libre y siempre lo será. 
 
 
-      **Nuestra misión: **
+      **Nuestra misión:**
 
       Contribuir al avance de las metodologías de detección de nubes y convertir a CloudSEN12+ en un recurso esencial para la comunidad de investigación en este campo.
-
-
-      **Agradecimientos**
-
-      Queremos agradecer el apoyo invaluable de la Universidad Nacional Mayor de San Marcos y la Universidad Politécnica de Valencia, cuya orientación y conocimiento técnico nos ayudaron a convertir nuestro proyecto en lo que es hoy.
+      
   projects:
     postsNum: 3
     active: true
