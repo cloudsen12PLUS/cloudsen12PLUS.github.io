@@ -51,7 +51,7 @@ en:
     active: true
     title: Examples
     description: Some practical examples of the use of the CloudSEN12+
-    postsNum: 3
+    postsNum: 4
     seeMore: See more examples
   blog:
     active: true
@@ -123,7 +123,7 @@ es:
       Nuestro objetivo es convertirnos en el principal proveedor de conjuntos de datos de detección de nubes para múltiples sensores de teledetección. Estamos dedicados a proporcionar a científicos e industrias los modelos y conjuntos de datos necesarios para garantizar la correcta detección de nubes.
 
   projects:
-    postsNum: 3
+    postsNum: 4
     active: true
     title: Ejemplos
     description: Algunos ejemplos prácticos del uso del dataset CloudSEN12+.
