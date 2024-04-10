@@ -74,6 +74,7 @@ en:
     active: true
     title: Contact
     description: Drop me a line
+    footertext: This website was inspired by and modified from
     contactMethods:
       - label: info@pedrokehl.net
         url: mailto:info@pedrokehl.net
@@ -159,6 +160,7 @@ pt:
     active: true
     title: Contato
     description: Vamos conversar
+    footertext: This website was inspired by and modified from 
     contactMethods:
       - label: info@pedrokehl.net
         url: mailto:info@pedrokehl.net

@@ -2,6 +2,8 @@
 import footer from "../../_data/settings/menuFooter.json"
 
 const { locale } = Astro.props;
+const { post } = Astro.props;
+
 const localizedFooterBuildTools = footer[locale]['buildTools']
 
 ---
@@ -16,6 +18,6 @@ const localizedFooterBuildTools = footer[locale]['buildTools']
       </a>
     </div>
   )}
-  </div>
-  <p class="dark:text-white mt-2">This website was inspired by and modified from <a style="text-decoration: underline;" href="https://github.com/ppkehl/pedrokehl-2022">Pedro Kehl</a></p>
+  </div> 
+  <p class="dark:text-white mt-2">{ footer[locale].footertext}<a style="text-decoration: underline;" href="https://github.com/ppkehl/pedrokehl-2022">Pedro Kehl</a></p>
 </footer>

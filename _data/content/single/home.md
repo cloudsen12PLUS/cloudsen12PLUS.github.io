@@ -63,6 +63,7 @@ en:
     active: true
     title: Contact us
     description: Drop me a line
+    footertext: This website was inspired by and modified from
     contactMethods:
       - label: cesar.aybar@uv.es
         url: mailto:cesar.aybar@uv.es
@@ -138,6 +139,7 @@ es:
     active: true
     title: Contáctanos
     description: Escríbenos 
+    footertext: This website was inspired by and modified from
     contactMethods:
       - label: cesar.aybar@uv.es
         url: mailto:cesar.aybar@uv.es

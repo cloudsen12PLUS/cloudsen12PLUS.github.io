@@ -54,7 +54,7 @@ const heroImage = post.hero.images[0]
           link={button.link}>{button.label}</Button>)}
       </div>
       
-      <div class="text-xl lg:text-2xl dark:text-white change-color">        
+      <div class="text-xl lg:text-2xl text-center dark:text-white change-color">        
         <a href="https://github.com/cloudsen12/" target="_blank">
           <img loading="lazy" class="inline-block mr-8 dark:invert" src="../assets/github.webp" alt="Github logo">
         </a>
@@ -109,7 +109,7 @@ const heroImage = post.hero.images[0]
 </ConditionalLoading>
 
 <ConditionalLoading load={post.projects.active}>
-  <section id="projects" class="anchor py-16 overflow-hidden xl:overflow-visible relative">
+  <section id="projects" class="anchor py-16 overflow-hidden xl:overflow-visible">
     <div class="absolute w-5/12 h-1/3 right-0 bottom-1/3 hidden lg:block">
       <Blobs />
     </div>
@@ -121,10 +121,18 @@ const heroImage = post.hero.images[0]
         </Title>
       </div>
     </div>
-    <div
-      class="xl:container px-6 scroll-px-6 mx-auto relative gap-8 flex flex-nowrap overflow-x-auto lg:overflow-visible lg:grid lg:grid-cols-3 z-10 snap-x"
-      data-scroll>
-      {selectedProjects.map((project) =><ProjectPreview project={project[locale]} />)}
+    <div class="projects__main xl:container mx-auto relative">
+      <button class="left-1 arrow__p left__project dark:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: currentColor ;transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+      </button>
+      <div
+        class="projects__container px-6 scroll-px-6 relative gap-8 flex flex-nowrap overflow-x-auto lg:overflow-visible lg:grid lg:grid-cols-3 z-10 snap-x"
+        data-scroll>
+        {selectedProjects.map((project) =><ProjectPreview project={project[locale]} />)}
+      </div>
+      <button class="arrow__p right__project dark:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+      </button>
     </div>
   </section>
 </ConditionalLoading>
@@ -144,11 +152,11 @@ const heroImage = post.hero.images[0]
     </div>
     <div
       class="xl:container px-6 scroll-px-6 mx-auto relative gap-8 flex flex-nowrap overflow-x-auto lg:overflow-visible lg:grid lg:grid-cols-4 z-10 snap-x"
-      data-scroll>
+      data-scroll style="overflow: auto;">
       {selectedPosts.map((post) =><BlogPreview post={post[locale]} />)}
     </div>
 
-    <div class="xl:container mx-auto px-6 relative z-10 text-right font-medium text-lg">
+    <div class=" xl:container mx-auto px-6 relative z-10 text-right font-medium text-lg">
       <a class="dark:text-white after:content-[''] after:w-5 after:h-5 after:bg-[url(/assets/icon-arrow-top.svg)] after:bg-no-repeat after:bg-right-top after:inline-block after:dark:invert after:relative after:top-1" href={moreProjectsLink}>{post.blog.seeMore}</a>
     </div>
 
@@ -180,13 +188,61 @@ const heroImage = post.hero.images[0]
   </section>
 </ConditionalLoading>
 <style>
+  .right__project{
+    right: -2.5rem;
+  }
+  .left__project{
+left: -2rem;
+  }
+  .arrow__p{
+    z-index: 100;
+    position: absolute;
+    font-size: 4rem;
+    top: 35%;
+  }
+  .projects__main{
+width: 93%;
+  }
+  .projects__container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+  @media(max-width:680px){
+    .right__project{
+    right: -1rem;
+  }
+  .left__project{
+left: -1rem;
+  }
+  .projects__main{
+    width: 88%;
+  }
+  }
   @media (max-width:768px) {
     .content__hero{
-      margin-top: 2rem;
+      margin-top: 4rem;
     }
   }
 </style>
+<script>
+  let projectContent = document.querySelector(".projects__container") as HTMLElement,
+    leftP = document.querySelector(".left__project") as HTMLElement,
+    rightP = document.querySelector(".right__project") as HTMLElement;
+
+    rightP.addEventListener("click", () => {
+     projectContent.scrollLeft += projectContent.offsetWidth;
+     });
+
+leftP.addEventListener("click", () => {
+  projectContent.scrollLeft -= projectContent.offsetWidth;
+});
+
+</script>
 <script define:vars={{heroImages}}>
+
   const randomImage = Math.floor(Math.random() * heroImages.length);
   const selectedImage = heroImages[randomImage];
   let heroImage = document.getElementById("hero-image");

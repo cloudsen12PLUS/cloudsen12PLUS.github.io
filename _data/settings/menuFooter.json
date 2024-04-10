@@ -1,5 +1,6 @@
 {
   "en": {
+    "footertext": "This website was inspired by and modified from",
     "buildTools": [
       {
         "logo": "https://res.cloudinary.com/ppkehl/image/upload/v1657591669/icons/astro-logo-bw_qjkufv_pmbpcg.svg",
@@ -24,6 +25,7 @@
     ]
   },
   "es": {
+    "footertext": "Este sitio web fue inspirado y modificado de",
     "buildTools": [
       {
         "label": "Feito com Astro",
