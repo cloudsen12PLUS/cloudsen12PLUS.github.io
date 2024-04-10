@@ -1,6 +1,6 @@
 ---
-title: "Desenvolvendo um site com Astro: Frameworks e Serviços"
-date: 2022-08-04T22:39:18.959Z
+title: Repositories
+date: 2022-08-04
 author: CloudSEN12
 tags:
   - Dev
