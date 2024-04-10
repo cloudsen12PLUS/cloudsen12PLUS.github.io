@@ -33,16 +33,19 @@ en:
     title: About us
     description: 
     text: >-
-     The CloudSEN12 project originated in Peru, supported by the National University of San Marcos in Peru and the University of Valencia in Spain. It stemmed from the necessity to tackle the challenge of working with images contaminated by clouds in the Peruvian Andes, where cloud detection algorithms perform poorly. Due to the absence of suitable datasets for this region, we decided to create CloudSEN12, a global dataset with manual labels, carefully selecting satellite images from previously overlooked areas. After the dataset's release and receiving valuable feedback, the team was motivated to improve further, leading to CloudSEN12+, where with the acquired knowledge, we refined the dataset to ensure maximum trustworthiness.
+      The CloudSEN12 project initiated in Peru, supported by the universities of Salzburg, San Marcos, and Valencia. It stemmed from the necessity to tackle the challenge of working with images contaminated by clouds in South America, where cloud detection algorithms usually perform poorly. Due to the absence of suitable datasets for regions outside Europe and the US, we created CloudSEN12, an unbias globally distributed dataset. After the dataset’s release and receiving valuable feedback, the team was motivated to improve further, leading to CloudSEN12+, where, with the acquired knowledge, we refined the dataset to ensure maximum trustworthiness.
 
-      **Our motivation:**
-      
-      "We believe EO datasets should be Unbiased, High-quality & Practical."<br>
-      We are deeply passionate about our work and are committed to excellence every step of the way. We are committed to providing ongoing access to our dataset, ensuring its availability for all users indefinitely.
 
-      **Our mission:**
+      **Mission:**
 
-      To contribute to advancing cloud detection methodologies and making CloudSEN12+ an essential resource for the research community in this field.
+
+      Provides high-quality, open cloud detection labels for Sentinel-2, ensuring fair global data distribution.
+
+
+      **Vision:**
+
+
+      Our aim is to become the top provider of cloud detection datasets across multiple optical remote sensing sensors. We are dedicated to providing researchers and industries with the necessary models and datasets to accurate perform cloud screening.
 
   projects:
     active: true
@@ -108,20 +111,19 @@ es:
     title: Sobre nosotros
     description:
     text: >-
-      El proyecto CloudSEN12 se originó en Perú, respaldado por la Universidad Nacional Mayor de San Marcos y la Universidad de Valencia. Surgió de la necesidad de abordar el desafío de trabajar con imágenes contaminadas por nubes en los Andes peruanos, donde los algoritmos de detección de nubes no funcionaban correctamente. Ante la falta de datasets adecuados para esta región, se decidió crear CloudSEN12, un conjunto de datos mundial con etiquetas manuales, seleccionando cuidadosamente imágenes satelitales en áreas previamente pasadas por alto. Tras el lanzamiento de este conjunto de datos y recibir valiosos comentarios, nos sentimos inspirados para seguir mejorando. Así fue como nació CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad. 
+      El proyecto CloudSEN12 se originó en Perú, respaldado por la Universidad de Salzburg, San Marcos, y Valencia. Surgió de la necesidad de abordar el desafío de trabajar con imágenes contaminadas por nubes en los Andes peruanos, donde los algoritmos de detección de nubes no funcionaban correctamente. Ante la falta de datasets adecuados para esta región, se decidió crear CloudSEN12,  un dataset distribuido globalmente. Tras el lanzamiento de este conjunto de datos en 2022 y recibir valiosos comentarios, nos sentimos inspirados para seguir mejorando. Así fue como nació CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad. 
 
 
-      **Nuestra motivación:**
+      **Misión:**
 
 
-      "We believe EO datasets should be: Unbias, High-quality & Practical". <br>
-      Nos apasiona profundamente el trabajo que realizamos y estamos comprometidos con la excelencia en cada paso del camino. Nos llena de orgullo decir que nuestro conjunto de datos es libre y siempre lo será. 
+      Proveer de etiquetas de detección de nubes de alta calidad y abiertas para Sentinel-2, garantizando una distribución de datos equitativa en el planeta.
 
 
-      **Nuestra misión:**
+      **Visión:**
 
 
-      Contribuir al avance de las metodologías de detección de nubes y convertir a CloudSEN12+ en un recurso esencial para la comunidad de investigación en este campo.
+      Nuestro objetivo es convertirnos en el principal proveedor de conjuntos de datos de detección de nubes para múltiples sensores de teledetección. Estamos dedicados a proporcionar a científicos e industrias los modelos y conjuntos de datos necesarios para garantizar la correcta detección de nubes.
 
   projects:
     postsNum: 3
@@ -140,19 +142,16 @@ es:
     title: Contáctanos
     description: Escríbenos 
     contactMethods:
-      - label: info@pedrokehl.net
-        url: mailto:info@pedrokehl.net
+      - label: cesar.aybar@uv.es
+        url: mailto:cesar.aybar@uv.es
         icon: https://res.cloudinary.com/ppkehl/image/upload/v1658934033/icons/icon-mail_tyul5l.svg
-      - label: techhub.social/@ppkehl
-        url: https://techhub.social/@ppkehl
+      - label: github.com/cloudsen12
+        url: https://github.com/cloudsen12
         icon: https://res.cloudinary.com/ppkehl/image/upload/v1668933459/icons/mastodon_fhq4bo.svg
-      - label: linkedin.com/in/pedro-kehl
-        url: https://www.linkedin.com/in/pedro-kehl/
-        icon: https://res.cloudinary.com/ppkehl/image/upload/v1658934033/icons/icon-linkedin_ojsf6k.svg
-      - label: instagram.com/ppkehl
-        url: https://instagram.com/ppkehl
+      - label: huggingface/isp-uv-es
+        url: https://huggingface.co/isp-uv-es
         icon: https://res.cloudinary.com/ppkehl/image/upload/v1658934033/icons/icon-instagram_ljjd3k.svg
-      - label: github.com/ppkehl
-        url: https://github.com/ppkehl
+      - label: twitter.com/isp_uv_es
+        url: https://twitter.com/isp_uv_es
         icon: https://res.cloudinary.com/ppkehl/image/upload/v1657591338/icons/logo-github_o8nj8f_ltj0dc.svg
 ---
