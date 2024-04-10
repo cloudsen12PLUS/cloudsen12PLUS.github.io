@@ -143,14 +143,14 @@ es:
     contactMethods:
       - label: cesar.aybar@uv.es
         url: mailto:cesar.aybar@uv.es
-        icon: https://res.cloudinary.com/ppkehl/image/upload/v1658934033/icons/icon-mail_tyul5l.svg
+        icon: /assets/logo-email-contacto.svg
       - label: github.com/cloudsen12
         url: https://github.com/cloudsen12
-        icon: https://res.cloudinary.com/ppkehl/image/upload/v1668933459/icons/mastodon_fhq4bo.svg
+        icon: /assets/logo-github-contacto.svg
       - label: huggingface/isp-uv-es
         url: https://huggingface.co/isp-uv-es
-        icon: https://res.cloudinary.com/ppkehl/image/upload/v1658934033/icons/icon-instagram_ljjd3k.svg
+        icon: /assets/logo-huggingface-contacto.svg
       - label: twitter.com/isp_uv_es
         url: https://twitter.com/isp_uv_es
-        icon: https://res.cloudinary.com/ppkehl/image/upload/v1657591338/icons/logo-github_o8nj8f_ltj0dc.svg
+        icon: /assets/logo-twitter-contacto.svg
 ---
