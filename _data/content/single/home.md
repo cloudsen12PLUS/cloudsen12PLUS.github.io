@@ -64,20 +64,17 @@ en:
     title: Contact us
     description: Drop me a line
     contactMethods:
-      - label: info@pedrokehl.net
-        url: mailto:info@pedrokehl.net
+      - label: cesar.aybar@uv.es
+        url: mailto:cesar.aybar@uv.es
         icon: https://res.cloudinary.com/ppkehl/image/upload/v1658934033/icons/icon-mail_tyul5l.svg
-      - label: techhub.social/@ppkehl
-        url: https://techhub.social/@ppkehl
+      - label: github.com/cloudsen12
+        url: https://github.com/cloudsen12
         icon: https://res.cloudinary.com/ppkehl/image/upload/v1668933459/icons/mastodon_fhq4bo.svg
-      - label: linkedin.com/in/pedro-kehl
-        url: https://www.linkedin.com/in/pedro-kehl/
-        icon: https://res.cloudinary.com/ppkehl/image/upload/v1658934033/icons/icon-linkedin_ojsf6k.svg
-      - label: instagram.com/ppkehl
-        url: https://instagram.com/ppkehl
+      - label: huggingface/isp-uv-es
+        url: https://huggingface.co/isp-uv-es
         icon: https://res.cloudinary.com/ppkehl/image/upload/v1658934033/icons/icon-instagram_ljjd3k.svg
-      - label: github.com/ppkehl
-        url: https://github.com/ppkehl
+      - label: twitter.com/isp_uv_es
+        url: https://twitter.com/isp_uv_es
         icon: https://res.cloudinary.com/ppkehl/image/upload/v1657591338/icons/logo-github_o8nj8f_ltj0dc.svg
 es:
   hero:
