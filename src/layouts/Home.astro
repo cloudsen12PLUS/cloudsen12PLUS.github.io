@@ -35,7 +35,7 @@ const heroImage = post.hero.images[0]
 
 <ConditionalLoading load={post.hero.active}>
   <section id="hero"
-    class="anchor xl:container mx-auto px-6 py-32 flex items-center h-screen lg:min-h-[750px] max-h-[1400px] relative overflow-hidden xl:overflow-visible">
+    class="anchor xl:container mx-auto px-6 py-32 flex items-center h-screen lg:min-h-[750px] max-h-[1400px] relative ">
     <br>
     <div class="w-full md:w-8/12 lg:w-6/12 space-y-8 z-20 content__hero">
       <div>
@@ -236,8 +236,12 @@ left: -1rem;
   }
   }
   @media (max-width:768px) {
+    #hero{
+      height: auto;
+      padding: 0 auto
+    }
     .content__hero{
-      margin-top: 4rem;
+      margin-top: 6rem;
     }
   }
 </style>
