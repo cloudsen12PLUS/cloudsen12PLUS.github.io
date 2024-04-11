@@ -7,7 +7,7 @@
     <div class="aspect-square flex">
       <img src="/assets/logo.png" class="object-contain w-10 h-10" alt="Logo" />
     </div>
-    <div class="lg:block h-full pl-2.5 text-black dark:text-white">
+    <div class="logo__title lg:block h-full pl-2.5 text-black dark:text-white">
       <div class="relative lg:text-3xl font-bold title__h">
         Cloud<span class="text-with-color-style">SEN12</span>
       </div>
@@ -20,6 +20,9 @@
 <!-- Make the SEN12 change according to the button style -->
 <style>
   @media(max-width:768px){
+    .logo__title{
+      margin-top: -.2rem;
+    }
     .title__h{
       font-size: 1.5rem;
     }
