@@ -7,7 +7,7 @@ tags:
 description: "Neste primeiro post sobre a criação do meu portfólio usando o
   Astro, vou começar comentando sobre o meu processo de escolha das partes que o
   compõem. "
-featuredImage: https://res.cloudinary.com/ppkehl/image/upload/v1659706799/blog/Frame_37_cuo0de.webp
+featuredImage: ../assets/1nuberepo.png
 ---
 ## Backend
 
