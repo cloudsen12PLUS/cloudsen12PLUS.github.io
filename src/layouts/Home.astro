@@ -156,8 +156,8 @@ const heroImage = post.hero.images[0]
       {selectedPosts.map((post) =><BlogPreview post={post[locale]} />)}
     </div>
 
-    <div class=" xl:container mx-auto px-6 relative z-10 text-right font-medium text-lg">
-      <a class="dark:text-white after:content-[''] after:w-5 after:h-5 after:bg-[url(/assets/icon-arrow-top.svg)] after:bg-no-repeat after:bg-right-top after:inline-block after:dark:invert after:relative after:top-1" href={moreProjectsLink}>{post.blog.seeMore}</a>
+    <div class="more__blogs xl:container mx-auto px-6 relative z-10 text-right font-medium text-lg">
+      <a class="dark:text-white after:content-[''] after:w-5 after:h-5 after:bg-[url(/assets/icon-arrow-top.svg)] after:bg-no-repeat after:bg-right-top after:inline-block after:dark:invert after:relative after:top-1 text-with-color-style" href={moreProjectsLink}>{post.blog.seeMore}</a>
     </div>
 
   </section>
@@ -180,7 +180,7 @@ const heroImage = post.hero.images[0]
       <div class="w-full lg:w-6/12 space-y-4 lg:pt-12 lg:pl-8 dark:text-white">
         {post.contact.contactMethods.map((contactMethod) =>
           <a class="block w-fit" href={contactMethod.url}>
-            <img loading="lazy" class="w-5 h-5 inline-block mr-1 dark:invert" src={contactMethod.icon} alt={'Icon for ' + contactMethod.label}/>
+            <img loading="lazy" class="icons_contacto w-5 h-5 inline-block mr-1 dark:invert" src={contactMethod.icon} alt={'Icon for ' + contactMethod.label}/>
             <div class="inline-block">{contactMethod.label}</div>
           </a>
         )}        
@@ -188,6 +188,20 @@ const heroImage = post.hero.images[0]
   </section>
 </ConditionalLoading>
 <style>
+  .more__blogs:hover{
+    font-size: 1.23rem;
+  }
+  .more__blogs{
+    font-size: 1.2rem;
+    transition: .3s ease all;
+    font-weight: 600
+  }
+  [data-style="Primary"] {
+    @apply bg-[rgba(var(--primaryColor),0.8)] hover:bg-[rgba(var(--primaryColor),1)];
+  }
+  .text-with-color-style {
+    @apply text-[rgba(var(--primaryColor),0.8)];
+  }
   .right__project{
     right: -2.5rem;
   }
@@ -228,6 +242,13 @@ left: -1rem;
   }
 </style>
 <script>
+ const images = document.querySelectorAll('.icons_contacto');
+
+// Verificar si hay al menos tres imágenes
+if (images.length >= 3) {
+    // Quitar la clase 'dark:invert' de la tercera imagen
+    images[2].classList.remove('dark:invert');
+}
   let projectContent = document.querySelector(".projects__container") as HTMLElement,
     leftP = document.querySelector(".left__project") as HTMLElement,
     rightP = document.querySelector(".right__project") as HTMLElement;
