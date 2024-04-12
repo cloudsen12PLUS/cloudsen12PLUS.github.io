@@ -78,7 +78,7 @@ collections:
         allow_add: true
         min: 1
         max: 12
-        options: ["WordPress", "Craft CMS", "Astro", "Sass", "Tailwind", "Netlify", "Svelte", "React", "Preact", "Jquery", "GreenSock", "JavaScript"]
+        options: ["WordPress", "Craft CMS", "Astro", "Sass", "Tailwind", "", "Svelte", "React", "Preact", "Jquery", "GreenSock", "JavaScript"]
       # Description  
       - {label: "Description", name: "body", widget: "markdown", i18n: true} 
       # Featured Image  

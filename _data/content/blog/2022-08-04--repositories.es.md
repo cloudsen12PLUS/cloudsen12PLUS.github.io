@@ -15,17 +15,17 @@ featuredImage: ../assets/1nuberepo.png
 
 Como o intuito era aprender coisas novas, fugi da tentação de usá-lo. Em seguida, testei outras opções como o [Cosmic CMS](https://www.cosmicjs.com/) - uma solução baseada em nuvem bastante flexível. Em seguida, testei o [Strapi](https://strapi.io/), que possui versões pagas e gratuitas, e é bastante poderoso. Em termos de facilidade de configuração, o Strapi me lembrou um pouco o [Craft](https://craftcms.com/), CMS baseado em PHP. Por mais que tenha gostado de ambas opções, para meu escopo de projeto as duas pareciam mais complexas do que o necessário.
 
-Foi então que cruzei, por acaso, com a solução que acabei adotando: o [Netlify CMS](https://www.netlifycms.org/). O Netlify foi criado pela empresa de mesmo nome que ajudou a dar forma ao conceito de [Jamstack](https://jamstack.org/). Já tinha a intenção de hospedar o meu novo portfólio lá, resolvi explorá-lo, e acabei optando por ele.
+Foi então que cruzei, por acaso, com a solução que acabei adotando: o [ CMS](https://www.cms.org/). O  foi criado pela empresa de mesmo nome que ajudou a dar forma ao conceito de [Jamstack](https://jamstack.org/). Já tinha a intenção de hospedar o meu novo portfólio lá, resolvi explorá-lo, e acabei optando por ele.
 
-## O escolhido: Netlify CMS
+## O escolhido:  CMS
 
-A proposta do CMS é muito interessante. Ao invés de usar um banco de dados acoplado a um serviço que organiza e distribui os dados, o Netlify funciona editando diretamente arquivos hospedados em uma plataforma GIT, tais como [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), [Gitlab](https://about.gitlab.com/), etc. 
+A proposta do CMS é muito interessante. Ao invés de usar um banco de dados acoplado a um serviço que organiza e distribui os dados, o  funciona editando diretamente arquivos hospedados em uma plataforma GIT, tais como [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), [Gitlab](https://about.gitlab.com/), etc. 
 
 Usando um arquivo yml de configuração, pode-se especificar diferentes "coleções" como posts, páginas e arquivos de configuração. Para tipos "textuais" como posts e páginas, a saída padrão é em arquivos markdown, que são facilmente consumidos por fronts Jamstack. Para arquivos de configuração (digamos, a estrutura de um menu ou a paleta de cores do site), é possível exportar os arquivos como JSON, yml, entre outros.
 
-Cada tipo de campo é considerado um [widget](https://www.netlifycms.org/docs/widgets/), cada um aceitando diferentes parâmetros. O processo de configuração é extremamente simples. Como mais um (grande!) ponto a favor, o CMS vem pronto para [internacionalização](https://www.netlifycms.org/docs/configuration-options/#locale): basta configurar as linguagens globais e depois especificar campo a campo como será o processo.
+Cada tipo de campo é considerado um [widget](https://www.cms.org/docs/widgets/), cada um aceitando diferentes parâmetros. O processo de configuração é extremamente simples. Como mais um (grande!) ponto a favor, o CMS vem pronto para [internacionalização](https://www.cms.org/docs/configuration-options/#locale): basta configurar as linguagens globais e depois especificar campo a campo como será o processo.
 
-Abaixo você pode ver um exemplo do arquivo de configuração do Netlify CMS. No arquivo yml, configuro cada campo, exatamente como como aparecerá no admin. Você pode encontrar mais informações sobre as opções [aqui](https://www.netlifycms.org/docs/configuration-options/).
+Abaixo você pode ver um exemplo do arquivo de configuração do  CMS. No arquivo yml, configuro cada campo, exatamente como como aparecerá no admin. Você pode encontrar mais informações sobre as opções [aqui](https://www.cms.org/docs/configuration-options/).
 
 ```yaml
 - name: "blog"
@@ -67,7 +67,7 @@ Abaixo você pode ver um exemplo do arquivo de configuração do Netlify CMS. No
             multiple: false  
 ```
 
-Quando você salva um post no Netlify CMS, o sistema cria um pull request no seu provedor Git. Se o projeto está numa plataforma como [Netlify ](https://www.netlify.com/)ou [Vercel](https://vercel.com/), elas detectam o pull e desencadeiam um novo build do projeto com o novo conteúdo. É magicamente automático.
+Quando você salva um post no  CMS, o sistema cria um pull request no seu provedor Git. Se o projeto está numa plataforma como [ ](https://www..com/)ou [Vercel](https://vercel.com/), elas detectam o pull e desencadeiam um novo build do projeto com o novo conteúdo. É magicamente automático.
 
 ## Frontend: Astro e Svelte
 
@@ -81,11 +81,11 @@ Com a escolha do Astro, optei por tentar delegar o máximo possível os componen
 
 Para completar o pacote, escolhi usar o [Tailwind](https://tailwindcss.com/) para o CSS. Também era uma ferramenta que queria testar, depois de muitos anos que tinha experimentado classes de utilidades. Expliquei um pouco sobre a minha experiência [aqui](https://pedrokehl.net/pt/blog/pensamentos-sobre-o-tailwind-e-classes-de-utilidades/).
 
-## Hospedagem "Serverless": Netlify
+## Hospedagem "Serverless": 
 
-Fiquei entre a Netlify e a Vercel para hospedar o site. A Netlify tinha a facilidade do gateway de autenticação do CMS, que funciona sem nenhuma configuração adicional. A Vercel tem uma parte de analytics que queria explorar. Acabei optando pela Netfly pela comodidade. Ela também oferece uma forma bastante simples de criar formulários de contato num ambiente JAMstack (apesar de ter optado no final por uma solução mais agnóstica usando o [Web3Forms](https://web3forms.com/)). 
+Fiquei entre a  e a Vercel para hospedar o site. A  tinha a facilidade do gateway de autenticação do CMS, que funciona sem nenhuma configuração adicional. A Vercel tem uma parte de analytics que queria explorar. Acabei optando pela Netfly pela comodidade. Ela também oferece uma forma bastante simples de criar formulários de contato num ambiente JAMstack (apesar de ter optado no final por uma solução mais agnóstica usando o [Web3Forms](https://web3forms.com/)). 
 
-Para as imagens, escolhi a [Cloudinary](https://cloudinary.com/), um serviço que gerencia, formata e entrega os objetos via CDN, e se integra magistralmente com o Netlify CMS.
+Para as imagens, escolhi a [Cloudinary](https://cloudinary.com/), um serviço que gerencia, formata e entrega os objetos via CDN, e se integra magistralmente com o  CMS.
 
 O repositório do projeto ficou no GitHub.
 

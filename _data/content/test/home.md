@@ -55,7 +55,7 @@ en:
 
       1. Design tokens to create coherent visual communication between teams and products ([Style Dictionary](https://amzn.github.io/style-dictionary), [Figma Tokens](https://www.figmatokens.com/))
 
-      2. Decoupling front and backend, using headless CMS’s ([Strapi](https://strapi.io/), [Payload CMS](https://payloadcms.com/), [Netlify CMS](https://www.netlifycms.org/)  and other headless CMS’s)
+      2. Decoupling front and backend, using headless CMS’s ([Strapi](https://strapi.io/), [Payload CMS](https://payloadcms.com/), [ CMS](https://www.cms.org/)  and other headless CMS’s)
 
       3. Blazing fast frontends ([Svelte](https://svelte.dev/), [Astro](https://astro.build/))
     image: https://res.cloudinary.com/ppkehl/image/upload/v1656728600/pedro-kehl-400_xd6bmu.webp
@@ -142,7 +142,7 @@ pt:
 
       1. Design tokens para criar uma comunicação visual coerente entre times e produtos ([Style Dictionary](https://amzn.github.io/style-dictionary), [Figma Tokens](https://www.figmatokens.com/))
 
-      2. Desacoplamento front-end e back-end, usando CMSs headless ([Strapi](https://strapi.io/), [Payload CMS](https://payloadcms.com/), [Netlify CMS](https://www.netlifycms.org/)  e outros CMSs headless)
+      2. Desacoplamento front-end e back-end, usando CMSs headless ([Strapi](https://strapi.io/), [Payload CMS](https://payloadcms.com/), [ CMS](https://www.cms.org/)  e outros CMSs headless)
 
       3. Frontends extremamente rápidos ([Svelte](https://svelte.dev/), [Astro](https://astro.build/))
   projects:

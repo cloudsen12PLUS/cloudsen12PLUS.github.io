@@ -14,17 +14,17 @@ featuredImage: ../assets/1nuberepo.png
 
 As the purpose was to learn new things, I avoided the temptation to use it. Then I tested other options like [Cosmic CMS](https://www.cosmicjs.com/) - a very flexible cloud based solution. Next, I tested [Strapi](https://strapi.io/), which has both paid and free versions, and is quite powerful. In terms of ease of setup, Strapi reminded me a bit of [Craft](https://craftcms.com/), a PHP-based CMS. As much as I liked both options, for my project scope they seemed overkill.
 
-It was then that I came across, by chance, with the solution I ended up adopting: [Netlify CMS](https://www.netlifycms.org/). Netlify was created by the company of the same name that helped shape the concept of [Jamstack](https://jamstack.org/). I already intended to host my new portfolio there, so I decided to explore it, and ended up opting for it.
+It was then that I came across, by chance, with the solution I ended up adopting: [ CMS](https://www.cms.org/).  was created by the company of the same name that helped shape the concept of [Jamstack](https://jamstack.org/). I already intended to host my new portfolio there, so I decided to explore it, and ended up opting for it.
 
-## The Chosen One: Netlify CMS
+## The Chosen One:  CMS
 
-The CMS proposal is very interesting. Rather than using a database coupling to a service and organizing data, Netlify works by directly editing files hosted on a GIT platform, such as [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), [Gitlab](https://about.gitlab.com/), etc.
+The CMS proposal is very interesting. Rather than using a database coupling to a service and organizing data,  works by directly editing files hosted on a GIT platform, such as [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), [Gitlab](https://about.gitlab.com/), etc.
 
 Using a config yml file you can specify different "collections" like posts, pages and config files. For "textual" types like posts and pages, the standard output is in markdown files, which are easily consumed by Jamstack fronts. For configuration files (say, a menu structure or a website's color palette), you can export the files as JSON, yml, and so on.
 
-Each field type is considered a different [widget](https://www.netlifycms.org/docs/widgets/), each accepting parameters. The setup process is extremely simple. As another (big) point in its favor, the CMS comes ready for the [internationalization](https://www.netlifycms.org/docs/configuration-options/#locale): just define the global definitions and then define field by field how the process will be.
+Each field type is considered a different [widget](https://www.cms.org/docs/widgets/), each accepting parameters. The setup process is extremely simple. As another (big) point in its favor, the CMS comes ready for the [internationalization](https://www.cms.org/docs/configuration-options/#locale): just define the global definitions and then define field by field how the process will be.
 
-Bellow you can see an example of how the configuration file for Netlify CMS works: In the yml file I can configure each field exactly as it will appear in the admin. You can find more info [here](https://www.netlifycms.org/docs/configuration-options/).
+Bellow you can see an example of how the configuration file for  CMS works: In the yml file I can configure each field exactly as it will appear in the admin. You can find more info [here](https://www.cms.org/docs/configuration-options/).
 
 ```yaml
 - name: "blog"
@@ -66,7 +66,7 @@ Bellow you can see an example of how the configuration file for Netlify CMS work
             multiple: false  
 ```
 
-When you save a post to Netlify CMS, the system creates a pull request in your Git provider. If the project is on a platform like [Netlify ](https://www.netlify.com/)or [Vercel](https://vercel.com/), they detect the pull and trigger a new build of the project with the new content. It's magically automatic.
+When you save a post to  CMS, the system creates a pull request in your Git provider. If the project is on a platform like [ ](https://www..com/)or [Vercel](https://vercel.com/), they detect the pull and trigger a new build of the project with the new content. It's magically automatic.
 
 ## Frontend: Astro and Svelte
 
@@ -80,11 +80,11 @@ With the choice of Astro, I chose to try to delegate as many reusable components
 
 To complete the package, I chose to use [Tailwind](https://tailwindcss.com/) for the CSS. It was also a tool I wanted to test, after many years of experimenting with utility classes. I explained a little about my experience [here](https://pedrokehl.net/en/blog/thoughts-on-tailwind-and-utility-classes/).
 
-## "Serverless" Hosting: Netlify
+## "Serverless" Hosting: 
 
-I stayed between Netlify and Vercel to host the site. Netlify had the CMS authentication gateway facility, which works without any additional configuration. Vercel has an analytics part that I wanted to explore. I ended up opting for Netfly for the convenience. It also offers a very simple way to create contact forms in a Jamstack environment (although I eventually opted for a more agnostic solution using [Web3Forms](https://web3forms.com/)).
+I stayed between  and Vercel to host the site.  had the CMS authentication gateway facility, which works without any additional configuration. Vercel has an analytics part that I wanted to explore. I ended up opting for Netfly for the convenience. It also offers a very simple way to create contact forms in a Jamstack environment (although I eventually opted for a more agnostic solution using [Web3Forms](https://web3forms.com/)).
 
-For the images, I chose [Cloudinary](https://cloudinary.com/), a service that manages, transforms and delivers objects via CDN, and integrates masterfully with Netlify CMS.
+For the images, I chose [Cloudinary](https://cloudinary.com/), a service that manages, transforms and delivers objects via CDN, and integrates masterfully with  CMS.
 
 The project repository is on GitHub.
 
