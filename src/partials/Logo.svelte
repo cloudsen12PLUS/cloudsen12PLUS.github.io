@@ -5,7 +5,7 @@
 <a href={homeLink} class="h-full block py-4 lg:py-7">
   <h1 id="logo" class="z-50 h-full relative flex items-center">
     <div class="aspect-square flex">
-      <img src="/assets/logo.png" class="object-contain w-10 h-10" alt="Logo" />
+      <img src="/assets/logo.webp" class="object-contain w-10 h-10" alt="Logo" />
     </div>
     <div class="logo__title lg:block h-full pl-2.5 text-black dark:text-white">
       <div class="relative lg:text-3xl font-bold title__h">
@@ -19,6 +19,9 @@
 
 <!-- Make the SEN12 change according to the button style -->
 <style>
+  .logo__title{
+    margin-top: .2rem;
+  }
   @media(max-width:768px){
     .logo__title{
       margin-top: -.2rem;
