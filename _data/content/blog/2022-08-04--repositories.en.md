@@ -6,7 +6,7 @@ tags:
   - Dev
 description: In this first post about creating my portfolio using Astro, I'll
   start by commenting on my process of choosing the parts that make it up.
-featuredImage: ../assets/1nuberepo.png
+featuredImage: ../assets/1nuberepo.webp
 ---
 ## Backend
 
