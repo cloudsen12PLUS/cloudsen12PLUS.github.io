@@ -29,7 +29,7 @@ en:
       - /assets/eye.webp
   about:
     active: true
-    image: /assets/image.png
+    image: /assets/image.webp
     title: About us
     description: 
     text: >-
@@ -105,7 +105,7 @@ es:
       - /assets/eye.webp
   about:
     active: true
-    image: /assets/image.png
+    image: /assets/image.webp
     title: Sobre nosotros
     description:
     text: >-
