@@ -153,74 +153,76 @@ const heroImage = post.hero.images[0];
     class="anchor xl:container mx-auto px-6 flex items-center h-screen lg:min-h-[750px] max-h-[1400px] relative"
   >
     <br />
-    <div class="w-full h-auto md:w-8/12 lg:w-6/12 space-y-8 z-20 content__hero">
-      <div>
-        <div class="text-2xl xl:text-3xl dark:text-white">
-          {post.hero.tagline}
+    <div class="flex items-start">
+      <div class="w-full h-auto md:w-8/12 lg:w-6/12 space-y-8 z-20 content__hero">
+        <div>
+          <div class="text-2xl xl:text-3xl dark:text-white">
+            {post.hero.tagline}
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl 2xl:text-7xl font-bold !leading-1 dark:text-white"
+          >
+            <Markdown content={post.hero.mainTagline} />
+          </h2>
         </div>
-        <h2
-          class="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl 2xl:text-7xl font-bold !leading-1 dark:text-white"
+        <div class="text-xl lg:text-2xl dark:text-white">
+          {post.hero.description}
+        </div>
+        <div class="lg:flex lg:space-x-6 space-y-6 lg:space-y-0">
+          {
+            post.hero.buttons.map((button) => (
+              <Button type="a" style={button.type} link={button.link}>
+                {button.label}
+              </Button>
+            ))
+          }
+        </div>
+  
+        <div
+          class="text-xl lg:text-2xl dark:text-white flex flex-wrap gap-2 change-color"
         >
-          <Markdown content={post.hero.mainTagline} />
-        </h2>
+          <a href="https://github.com/cloudsen12/" target="_blank">
+            <img
+              style="width:6rem;"
+              loading="lazy"
+              class="inline-block mr-8 dark:invert"
+              src="../assets/logo-github-contacto.svg"
+              alt="Github logo"
+            />
+          </a>
+  
+          <a
+            href="https://huggingface.co/datasets/isp-uv-es/CloudSEN12Plus"
+            target="_blank"
+          >
+            <img
+              style="width:7rem;"
+              loading="lazy"
+              class="inline-block mr-8"
+              src="../assets/logo-huggingface-banner.svg"
+              alt="Huggingface logo"
+            />
+          </a>
+  
+          <a
+            href="https://www.scidb.cn/en/preview?dataSetId=2036f4657b094edfbb099053d6024b08"
+            target="_blank"
+          >
+            <img
+              loading="lazy"
+              class="inline-block dark:invert"
+              src="../assets/sdb.webp"
+              alt="Linkedin logo"
+            />
+          </a>
+        </div>
       </div>
-      <div class="text-xl lg:text-2xl dark:text-white">
-        {post.hero.description}
+      <div class="w-full right-0 h-auto flex items md:w-8/12 lg:w-6/12 absolute canva__content inline-block">
+        <div class="absolute w-full flex justify-end items-center z-10 inline-block mr-8 dark:invert">
+          <canvas id="myChart"></canvas>
+        </div>
+        <Blobs />
       </div>
-      <div class="lg:flex lg:space-x-6 space-y-6 lg:space-y-0">
-        {
-          post.hero.buttons.map((button) => (
-            <Button type="a" style={button.type} link={button.link}>
-              {button.label}
-            </Button>
-          ))
-        }
-      </div>
-
-      <div
-        class="text-xl lg:text-2xl dark:text-white flex flex-wrap gap-2 change-color"
-      >
-        <a href="https://github.com/cloudsen12/" target="_blank">
-          <img
-            style="width:6rem;"
-            loading="lazy"
-            class="inline-block mr-8 dark:invert"
-            src="../assets/logo-github-contacto.svg"
-            alt="Github logo"
-          />
-        </a>
-
-        <a
-          href="https://huggingface.co/datasets/isp-uv-es/CloudSEN12Plus"
-          target="_blank"
-        >
-          <img
-            style="width:7rem;"
-            loading="lazy"
-            class="inline-block mr-8"
-            src="../assets/logo-huggingface-banner.svg"
-            alt="Huggingface logo"
-          />
-        </a>
-
-        <a
-          href="https://www.scidb.cn/en/preview?dataSetId=2036f4657b094edfbb099053d6024b08"
-          target="_blank"
-        >
-          <img
-            loading="lazy"
-            class="inline-block dark:invert"
-            src="../assets/sdb.webp"
-            alt="Linkedin logo"
-          />
-        </a>
-      </div>
-    </div>
-    <div class="w-full right-0 h-auto flex items md:w-8/12 lg:w-6/12 absolute canva__content inline-block">
-      <div class="absolute w-full h-full flex justify-end items-center z-10 inline-block mr-8 dark:invert">
-        <canvas id="myChart"></canvas>
-      </div>
-      <Blobs />
     </div>
     <!-- <div class="w-full h-full right-0 md:w-8/12 lg:w-6/12 absolute">
       <div
@@ -488,10 +490,7 @@ const heroImage = post.hero.images[0];
 <style>
   @media(max-width:760px){
     .canva__content{
-      bottom: 5rem;
-    }
-    #hero{
-      padding-bottom: 14rem
+      display: none;
     }
   }
 </style>
