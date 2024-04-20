@@ -33,12 +33,11 @@ en:
     title: About us
     description: 
     text: >-
-      The CloudSEN12 project was officially started in Peru with the guidance of [**Z_GIS**](https://www.plus.ac.at/geoinformatik/?lang=en) and the [**ISP**](https://isp.uv.es/). This initiative addresses the challenge of processing cloud-contaminated imagery, focusing in Tropical regions, where existing cloud detection algorithms frequently underperform. We attribute this shortcoming to the lack of *adequate labels in the training data*. To address this issue, we created a **high-quality**, **globally** distributed dataset to improve cloud detection capabilities. After the dataset’s release in 2022 and receiving valuable feedback, the team was motivated to improve further. This led to **CloudSEN12+**, where, with the acquired knowledge, we refined the dataset to ensure maximum trustworthiness.
-
+      The CloudSEN12 project started in Peru with the guidance of [**Z_GIS**](https://www.plus.ac.at/geoinformatik/?lang=en) and the [**ISP**](https://isp.uv.es/). This initiative addresses the challenge of processing cloud-contaminated imagery, focusing in Tropical regions, where existing cloud detection algorithms frequently underperform. We quickly identified that this shortcoming was due to the absence of a high-quality dataset. To address this issue, we decided to create a globally diverse dataset with a strong focus on quality, in order to improve  cloud detection capabilities. After the dataset’s release in December 2022 and receiving valuable feedback, the team was motivated to improve further. This led to **CloudSEN12+**, where, with the acquired knowledge, we refined the dataset ensuring maximum trustworthiness.
 
 
       **Mission:**
-
+      
 
       Provides high-quality, open cloud detection labels for Sentinel-2, ensuring fair global data distribution.
 
