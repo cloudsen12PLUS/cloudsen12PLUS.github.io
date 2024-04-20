@@ -13,13 +13,13 @@ en:
       Pixel hub
     buttons:
       - label: Paper 2022
-        link: "#contact"
+        link: https://www.nature.com/articles/s41597-022-01878-2
         type: Primary
       - label: Paper 2023
-        link: "#projects"
+        link: https://ieeexplore.ieee.org/document/10282381
         type: Secondary
       - label: Paper 2024
-        link: "#projects"
+        link: https://ieeexplore.ieee.org/document/10282381
         type: Tertiary
 
 
@@ -33,7 +33,8 @@ en:
     title: About us
     description: 
     text: >-
-      The CloudSEN12 project initiated in Peru, supported by the universities of Salzburg, San Marcos, and Valencia. It stemmed from the necessity to tackle the challenge of working with images contaminated by clouds in South America, where cloud detection algorithms usually perform poorly. Due to the absence of suitable datasets for regions outside Europe and the US, we created CloudSEN12, an unbias globally distributed dataset. After the dataset’s release and receiving valuable feedback, the team was motivated to improve further, leading to CloudSEN12+, where, with the acquired knowledge, we refined the dataset to ensure maximum trustworthiness.
+      The CloudSEN12 project was officially started in Peru with the guidance of [**Z_GIS**](https://www.plus.ac.at/geoinformatik/?lang=en) and the [**ISP**](https://isp.uv.es/). This initiative addresses the challenge of processing cloud-contaminated imagery, focusing in Tropical regions, where existing cloud detection algorithms frequently underperform. We attribute this shortcoming to the lack of *adequate labels in the training data*. To address this issue, we created a **high-quality**, **globally** distributed dataset to improve cloud detection capabilities. After the dataset’s release in 2022 and receiving valuable feedback, the team was motivated to improve further. This led to **CloudSEN12+**, where, with the acquired knowledge, we refined the dataset to ensure maximum trustworthiness.
+
 
 
       **Mission:**
@@ -45,7 +46,7 @@ en:
       **Vision:**
 
 
-      Our aim is to become the top provider of cloud detection datasets across multiple optical remote sensing sensors. We are dedicated to providing researchers and industries with the necessary models and datasets to accurate perform cloud screening.
+      Our aim is to become the most reliable provider of cloud semantic annotations across multiple optical remote sensing sensors. We strive to provide researchers and industries with the necessary models and datasets to perform accurate cloud screening.
 
   projects:
     active: true
@@ -91,13 +92,13 @@ es:
       CloudSEN12 ofrece la colección más completa para la detección de nubes y sombras de nubes en Sentinel-2.
     buttons:
       - label: Paper 2022
-        link: "#contact"
+        link: https://www.nature.com/articles/s41597-022-01878-2
         type: Primary
       - label: Paper 2023
-        link: "#projects"
+        link: https://ieeexplore.ieee.org/document/10282381
         type: Secondary
       - label: Paper 2024
-        link: "#projects"
+        link: https://ieeexplore.ieee.org/document/10282381
         type: Secondary
     images:
       - /assets/heart.webp
@@ -109,7 +110,7 @@ es:
     title: Sobre nosotros
     description:
     text: >-
-      El proyecto CloudSEN12 se originó en Perú, respaldado por la Universidad de Salzburg, San Marcos, y Valencia. Surgió de la necesidad de abordar el desafío de trabajar con imágenes contaminadas por nubes en los Andes peruanos, donde los algoritmos de detección de nubes no funcionaban correctamente. Ante la falta de datasets adecuados para esta región, se decidió crear CloudSEN12,  un dataset distribuido globalmente. Tras el lanzamiento de este conjunto de datos en 2022 y recibir valiosos comentarios, nos sentimos inspirados para seguir mejorando. Así fue como nació CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad. 
+      El proyecto CloudSEN12 se originó en Perú, bajo la guía de la Universidad de Salzburg, San Marcos, y Valencia. Surgió de la necesidad de abordar el desafío de trabajar con imágenes contaminadas por nubes en los Andes peruanos, donde los algoritmos de detección de nubes no funcionaban correctamente. Ante la falta de datasets adecuados para esta región, se decidió crear CloudSEN12,  un dataset distribuido globalmente. Tras el lanzamiento de este conjunto de datos en 2022 y recibir valiosos comentarios, nos sentimos inspirados para seguir mejorando. Así fue como nació CloudSEN12+, donde con el conocimiento adquirido, refinamos el dataset para ofrecer aun mas precisión y confiabilidad. 
 
 
       **Misión:**
@@ -121,7 +122,7 @@ es:
       **Visión:**
 
 
-      Nuestro objetivo es convertirnos en el principal proveedor de conjuntos de datos de detección de nubes para múltiples sensores de teledetección. Estamos dedicados a proporcionar a científicos e industrias los modelos y conjuntos de datos necesarios para garantizar la correcta detección de nubes.
+      Nuestro objetivo es convertirnos en el principal proveedor de conjuntos de datos de detección de nubes para múltiples sensores de teledetección. Nos esforzamos en proporcionar a científicos e industrias los modelos y conjuntos de datos necesarios para garantizar la correcta detección de nubes.
 
   projects:
     postsNum: 4
