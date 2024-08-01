@@ -5,7 +5,7 @@ author: CloudSEN12
 tags:
   - Dev
 description: "A brief overview of the tools/code used to build cloudSEN12."
-featuredImage: ../../../assets/1nuberepo.webp
+featuredImage: /assets/1nuberepo.webp
 ---
 
 ## [**dataset**](https://github.com/cloudsen12/dataset)

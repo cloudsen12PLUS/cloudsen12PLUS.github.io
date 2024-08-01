@@ -5,7 +5,7 @@ author: CloudSEN12
 tags:
   - Dev
 description: "Una breve descripción de las herramientas/código utilizadas para construir cloudSEN12."
-featuredImage: ../../../assets/1nuberepo.webp
+featuredImage: /assets/1nuberepo.webp
 ---
 
 
