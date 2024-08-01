@@ -1,5 +1,5 @@
 ---
-title: Repositories
+title: Repositorios
 date: 2024-07-31
 author: CloudSEN12
 tags:
