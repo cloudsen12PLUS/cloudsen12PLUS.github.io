@@ -4,91 +4,29 @@ date: 2022-08-04
 author: CloudSEN12
 tags:
   - Dev
-description: "Neste primeiro post sobre a criação do meu portfólio usando o
-  Astro, vou começar comentando sobre o meu processo de escolha das partes que o
-  compõem. "
+description: "Una breve descripción de las herramientas/código utilizadas para construir cloudSEN12."
 featuredImage: ../../../assets/1nuberepo.webp
 ---
-## Backend
 
-[Como disse antes](https://pedrokehl.net/pt/blog/wordpress-no-meu-passado-presente-e-futuro/), minha experiência primária em desenvolvimento sempre foi com o WordPress e PHP. O WP é uma plataforma monolítica, back e frontend totalmente integrados. Já o Jamstack, que era o paradigma que eu queria estudar, apresenta mais diversidade, e ao mesmo tempo maior complexidade. Há dezenas de escolhas para se fazer no backend, pelo menos 4 ou 5 delas bastante interessantes para se usar como CMS. Testei algumas delas, primeiramente o próprio WP, que pode ser usado de modo headless, consumindo o conteúdo via [REST](https://developer.wordpress.org/rest-api/), ou com o plugin [WPgraphQL](https://www.wpgraphql.com/), que funciona muito bem. 
 
-Como o intuito era aprender coisas novas, fugi da tentação de usá-lo. Em seguida, testei outras opções como o [Cosmic CMS](https://www.cosmicjs.com/) - uma solução baseada em nuvem bastante flexível. Em seguida, testei o [Strapi](https://strapi.io/), que possui versões pagas e gratuitas, e é bastante poderoso. Em termos de facilidade de configuração, o Strapi me lembrou um pouco o [Craft](https://craftcms.com/), CMS baseado em PHP. Por mais que tenha gostado de ambas opções, para meu escopo de projeto as duas pareciam mais complexas do que o necessário.
+## [**dataset**](https://github.com/cloudsen12/dataset)
 
-Foi então que cruzei, por acaso, com a solução que acabei adotando: o [ CMS](https://www.cms.org/). O  foi criado pela empresa de mesmo nome que ajudou a dar forma ao conceito de [Jamstack](https://jamstack.org/). Já tinha a intenção de hospedar o meu novo portfólio lá, resolvi explorá-lo, e acabei optando por ele.
+Este [**repositorio**](https://github.com/cloudsen12/dataset) contiene el código utilizado para crear el conjunto de datos cloudSEN12. Fue escrito completamente en R usando rgee para conectarse a Google Earth Engine, y stars y dplyr para la manipulación de datos. El código está licenciado por el equipo de CloudSEN12 bajo una [Licencia MIT](https://opensource.org/license/MIT).
 
-## O escolhido:  CMS
+## [**models**](https://github.com/cloudsen12/models)
 
-A proposta do CMS é muito interessante. Ao invés de usar um banco de dados acoplado a um serviço que organiza e distribui os dados, o  funciona editando diretamente arquivos hospedados em uma plataforma GIT, tais como [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), [Gitlab](https://about.gitlab.com/), etc. 
+Este [**repositorio**](https://github.com/cloudsen12/models) contiene el código para ejecutar los modelos de detección de nubes incluidos en el conjunto de datos. Creamos una imagen docker personalizada para ejecutar el software Fmask de Matlab. Este código está licenciado por el equipo de CloudSEN12 bajo una [Licencia MIT](https://opensource.org/license/MIT).
 
-Usando um arquivo yml de configuração, pode-se especificar diferentes "coleções" como posts, páginas e arquivos de configuração. Para tipos "textuais" como posts e páginas, a saída padrão é em arquivos markdown, que são facilmente consumidos por fronts Jamstack. Para arquivos de configuração (digamos, a estrutura de um menu ou a paleta de cores do site), é possível exportar os arquivos como JSON, yml, entre outros.
+## [**cloudapp**](https://github.com/cloudsen12/CloudApp)
 
-Cada tipo de campo é considerado um [widget](https://www.cms.org/docs/widgets/), cada um aceitando diferentes parâmetros. O processo de configuração é extremamente simples. Como mais um (grande!) ponto a favor, o CMS vem pronto para [internacionalização](https://www.cms.org/docs/configuration-options/#locale): basta configurar as linguagens globais e depois especificar campo a campo como será o processo.
+Este [**repositorio**](https://github.com/cloudsen12/CloudApp) contiene el código en Javascript para construir la aplicación CloudApp Earth Engine. Haz clic [**aquí**](https://ee-leslyarcelly213.projects.earthengine.app/view/cloudapp#run=true;sensor=Sentinel-2%20SR;lon=-76.39138073674154;lat=-12.316563873945507;rgb=SWIR1%2FNIR%2FGREEN;initYear=2018;initMonth=8;initDay=12;cloud=30;chipwidth=2;imgid=20190212T142031_20190212T143214_T19FDF;llb1=-1;ulb1=1;llndvi=-1;ulndvi=1;llb11=-1;ulb11=1;) para ver nuestra demo en vivo. El código está licenciado por el equipo de CloudSEN12 bajo una [Licencia MIT](https://opensource.org/license/MIT). CloudApp es una adaptación del repositorio [**ee-rgb-timeseries**](https://github.com/jdbcode/ee-rgb-timeseries).
 
-Abaixo você pode ver um exemplo do arquivo de configuração do  CMS. No arquivo yml, configuro cada campo, exatamente como como aparecerá no admin. Você pode encontrar mais informações sobre as opções [aqui](https://www.cms.org/docs/configuration-options/).
+## [**figures**](https://github.com/cloudsen12/figures)
 
-```yaml
-- name: "blog"
-    label: "Blog"
-    i18n:
-      structure: multiple_files
-      locales: [en, pt]
-    folder: '_data/content/blog'
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}T{{hour}}-{{minute}}-{{second}}--{{slug}}{{locale}}"
-    fields:
-      # Title
-      - {label: "Title", name: "title", widget: "string", i18n: true}
-      # Date
-      - {label: "Publish Date", name: "date", widget: "datetime", i18n: duplicate}
-      # Author
-      - {label: "Author", name: "author", widget: "string", default: "CloudSEN12", i18n: duplicate}
-      # Tags
-      - label: "Tags"
-        name: "tags"
-        widget: "select"
-        i18n: duplicate
-        multiple: true
-        min: 1
-        max: 12
-        options: ["Design", "Visual Arts", "Random Thoughts", "Dev"]
-      # Description  
-      - {label: "Description", name: "description", widget: "text", i18n: true}
-      # Body
-      - {label: "Post", name: "body", widget: "markdown", i18n: true}  
-      # Featured Image  
-      - label: "Featured Image"
-        name: "featuredImage"
-        widget: "image"
-        i18n: duplicate
-        allow_multiple: false
-        media_library:
-          config:
-            multiple: false  
-```
+Este [**repositorio**](https://github.com/cloudsen12/figures) contiene los scripts para reproducir las figuras del artículo. El código está licenciado por el equipo de CloudSEN12 bajo una [Licencia MIT](https://opensource.org/license/MIT).
 
-Quando você salva um post no  CMS, o sistema cria um pull request no seu provedor Git. Se o projeto está numa plataforma como [ ](https://www..com/)ou [Vercel](https://vercel.com/), elas detectam o pull e desencadeiam um novo build do projeto com o novo conteúdo. É magicamente automático.
+## [**iris**](https://github.com/cloudsen12/iris)
 
-## Frontend: Astro e Svelte
+Este [**repositorio**](https://github.com/cloudsen12/iris) contiene la herramienta de aprendizaje activo IRIS (Intelligence foR Image Segmentation). Este fantástico software ha sido creado por [JohnMrziglod](https://github.com/JohnMrziglod) y [aliFrancis](https://github.com/aliFrancis). El código está licenciado por ESA-PhiLab bajo una Licencia Pública General de GNU v3.0.
 
-Aqui também não faltam escolhas. A maioria dos frameworks ou "meta frameworks" se baseia em [React](https://pt-br.reactjs.org/). Eu compreendo a importância e o tamanho do React, mas queria explorar outras opções. Em termos de filosofia, acho muito interessante a abordagem do [Svelte](https://svelte.dev/). São alguns pontos que acho particularmente atraentes, e o primeiro é a familiaridade da sintaxe. O Svelte usa 3 blocos em seus componentes: uma parte de script, uma de HTML e uma de CSS. Mesmo as estruturas reativas, os loops e condicionais são muito simples de entender. Outro ponto: o Svelte é um compilador. O código que vai para produção é pré-compilado para JS nativo para ser rodado no browser. Há poucas "sobras" da parte que, por exemplo, seria o código do framework do React, e que em muitos casos ficaria ocioso. 
 
-O caminho mais curto para usar o Svelte no front seria optar pelo [SvelteKit](https://kit.svelte.dev/). Mas eu por acaso cruzei com um vídeo que me fez mudar de ideia: uma conversa [entre Theo e Fred Schott, CEO do Astro](https://www.youtube.com/watch?v=fp3mYVoMN7w).
-
-Basicamente, o Astro poderia se tornar um playground para testar diferentes frameworks, e com a vantagem de ser extremamente rápido e leve, como expliquei [em mais detalhes aqui](https://pedrokehl.net/pt/blog/astronomicamente-divertido/).
-
-Com a escolha do Astro, optei por tentar delegar o máximo possível os componentes reutilizáveis para o Svelte. Assim ia aprendendo as duas coisas ao mesmo tempo.
-
-Para completar o pacote, escolhi usar o [Tailwind](https://tailwindcss.com/) para o CSS. Também era uma ferramenta que queria testar, depois de muitos anos que tinha experimentado classes de utilidades. Expliquei um pouco sobre a minha experiência [aqui](https://pedrokehl.net/pt/blog/pensamentos-sobre-o-tailwind-e-classes-de-utilidades/).
-
-## Hospedagem "Serverless": 
-
-Fiquei entre a  e a Vercel para hospedar o site. A  tinha a facilidade do gateway de autenticação do CMS, que funciona sem nenhuma configuração adicional. A Vercel tem uma parte de analytics que queria explorar. Acabei optando pela Netfly pela comodidade. Ela também oferece uma forma bastante simples de criar formulários de contato num ambiente JAMstack (apesar de ter optado no final por uma solução mais agnóstica usando o [Web3Forms](https://web3forms.com/)). 
-
-Para as imagens, escolhi a [Cloudinary](https://cloudinary.com/), um serviço que gerencia, formata e entrega os objetos via CDN, e se integra magistralmente com o  CMS.
-
-O repositório do projeto ficou no GitHub.
-
-## Conclusões
-
-Por mais que o processo de seleção de todos os componentes deste quebra cabeças tenha sido trabalhoso, ele me deu uma boa ideia do panorama do JAMstack, da maturidade da ideia, e me fez avançar uns bons anos em experiências e aprendizados. No próximo post vou comentar um pouco sobre um dos maiores desafios do projeto, que foi torná-lo multilingue. Os problemas que enfrentei e as soluções que encontrei. Até lá!
